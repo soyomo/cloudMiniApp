@@ -5,10 +5,13 @@ Component({
     selectedColor: "#3cc51f",
     list: [{
       pagePath: "/pages/index/index",
-      text: "首页"
+      text: "蜻蜓"
+    }, {
+      pagePath: "/pages/map/map",
+      text: "蜻"
     }, {
       pagePath: "/pages/room/room",
-      text: "聊天室"
+      text: "蜓"
     }]
   },
   methods: {

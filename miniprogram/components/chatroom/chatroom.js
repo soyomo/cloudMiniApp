@@ -36,6 +36,7 @@ Component({
   },
   methods: {
     onGetUserInfo(e) {
+      console.log(this, 'thi')
       this.properties.onGetUserInfo(e)
     },
 
@@ -78,7 +79,6 @@ Component({
     async initOpenID() {
       return this.try(async () => {
         const openId = await this.getOpenID()
-
         this.setData({
           openId,
         })

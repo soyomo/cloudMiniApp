@@ -1,11 +1,5 @@
-/*
- * @Description: 
- * @Author: scf
- * @Date: 2020-01-14 16:04:41
- * @LastEditors: scf
- * @LastEditTime: 2020-01-15 20:09:17
- */
 //app.js
+import env from './env'
 App({
   onLaunch: function () {
     
@@ -18,6 +12,7 @@ App({
         //   此处请填入环境 ID, 环境 ID 可打开云控制台查看
         //   如不填则使用默认环境（第一个创建的环境）
         // env: 'my-env-id',
+        env: env.env,
         traceUser: true,
       })
     }

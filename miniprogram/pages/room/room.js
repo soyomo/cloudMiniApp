@@ -21,7 +21,7 @@ Component({
       if (typeof this.getTabBar === 'function' &&
         this.getTabBar()) {
         this.getTabBar().setData({
-          selected: 1
+          selected: 2
         })
       }
     }
@@ -31,9 +31,10 @@ Component({
       wx.setNavigationBarTitle({
         title: '聊天室'//页面标题为路由参数
       })
+      console.log(this, 'ssss')
       this.setData({
-        onGetUserInfo: this.onGetUserInfo,
-        getOpenID: this.getOpenID,
+        onGetUserInfo: this.onGetUserInfo.bind(this),
+        getOpenID: this.getOpenID.bind(this),
       })
       // 在组件实例进入页面节点树时执行
       wx.getSetting({
@@ -77,7 +78,8 @@ Component({
       return result.openid
     },
   
-    onGetUserInfo: function(e) {
+    onGetUserInfo: function (e) {
+      console.log(this, 'thishisis')
       if (!this.logged && e.detail.userInfo) {
         this.setData({
           logged: true,

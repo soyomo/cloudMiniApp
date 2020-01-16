@@ -2,6 +2,7 @@
   "pages": [
     "pages/index/index",
     "pages/room/room",
+    "pages/map/map",
     "pages/demo/userConsole/userConsole",
     "pages/demo/storageConsole/storageConsole",
     "pages/demo/databaseGuide/databaseGuide",
@@ -29,6 +30,10 @@
     "list": [{
       "pagePath": "pages/index/index",
       "text": "首页"
+    },
+    {
+      "pagePath": "pages/map/map",
+      "text": "蜻"
     },
     {
       "pagePath": "pages/room/room",
