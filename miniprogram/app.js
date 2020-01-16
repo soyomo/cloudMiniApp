@@ -1,3 +1,10 @@
+/*
+ * @Description: 
+ * @Author: scf
+ * @Date: 2020-01-14 16:04:41
+ * @LastEditors: scf
+ * @LastEditTime: 2020-01-15 20:09:17
+ */
 //app.js
 App({
   onLaunch: function () {
@@ -15,6 +22,8 @@ App({
       })
     }
 
-    this.globalData = {}
+    this.globalData = {
+      tabBarIndex: 0
+    }
   }
 })

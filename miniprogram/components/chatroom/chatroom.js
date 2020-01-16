@@ -27,13 +27,19 @@ Component({
     scrollToMessage: '',
     hasKeyboard: false,
   },
-
+  lifetimes: {
+    ready() {
+      global.chatroom = this
+      this.initRoom()
+      this.fatalRebuildCount = 0
+    }
+  },
   methods: {
     onGetUserInfo(e) {
       this.properties.onGetUserInfo(e)
     },
 
-    getOpenID() { 
+    getOpenID() {
       return this.properties.getOpenID() 
     },
 
@@ -326,11 +332,5 @@ Component({
         },
       })
     },
-  },
-
-  ready() {
-    global.chatroom = this
-    this.initRoom()
-    this.fatalRebuildCount = 0
-  },
+  }
 })

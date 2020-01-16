@@ -1,12 +1,12 @@
 <view class="chatroom">
-  <view class="header">
+  <!-- <view class="header"> -->
     <!-- display number of people in the room -->
-    <view class="left"></view>
+    <!-- <view class="left"></view> -->
     <!-- room name -->
-    <view class="middle">{{groupName}}</view>
+    <!-- <view class="middle">{{groupName}}</view> -->
     <!-- reserved -->
-    <view class="right"></view>
-  </view>
+    <!-- <view class="right"></view> -->
+  <!-- </view> -->
 
   <!-- chats -->
   <scroll-view 
